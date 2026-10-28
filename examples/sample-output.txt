@@ -1,0 +1,53 @@
+Reading examples/sample.pcap
+[0001] 2026-10-20T12:00:00.000000Z  ARP  42 bytes captured
+  192.0.2.10 -> 192.0.2.20
+  Payload: none
+[0002] 2026-10-20T12:00:00.001000Z  IPv4/TCP  132 bytes captured
+  192.0.2.10:45000 -> 192.0.2.20:8000
+  Payload: 78 bytes; showing 64 (truncated)
+    Text: b'GET /internship HTTP/1.1\r\nHost: demo.example\r\nUser-Agent: CodeAl'
+    Hex:  47 45 54 20 2f 69 6e 74 65 72 6e 73 68 69 70 20 48 54 54 50 2f 31 2e 31 0d 0a 48 6f 73 74 3a 20 64 65 6d 6f 2e 65 78 61 6d 70 6c 65 0d 0a 55 73 65 72 2d 41 67 65 6e 74 3a 20 43 6f 64 65 41 6c
+[0003] 2026-10-20T12:00:00.002000Z  IPv4/TCP  138 bytes captured
+  192.0.2.20:8000 -> 192.0.2.10:45000
+  Payload: 84 bytes; showing 64 (truncated)
+    Text: b'HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\nContent-Length: 19\r\n\r'
+    Hex:  48 54 54 50 2f 31 2e 31 20 32 30 30 20 4f 4b 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 74 65 78 74 2f 70 6c 61 69 6e 0d 0a 43 6f 6e 74 65 6e 74 2d 4c 65 6e 67 74 68 3a 20 31 39 0d 0a 0d
+[0004] 2026-10-20T12:00:00.003000Z  IPv4/UDP  72 bytes captured
+  192.0.2.10:53000 -> 192.0.2.20:53
+  Payload: 30 bytes; showing 30
+    Text: b'\x04\xd2\x01\x00\x00\x01\x00\x00\x00\x00\x00\x00\x04demo\x07example\x00\x00\x01\x00\x01'
+    Hex:  04 d2 01 00 00 01 00 00 00 00 00 00 04 64 65 6d 6f 07 65 78 61 6d 70 6c 65 00 00 01 00 01
+[0005] 2026-10-20T12:00:00.004000Z  IPv4/UDP  100 bytes captured
+  192.0.2.20:53 -> 192.0.2.10:53000
+  Payload: 58 bytes; showing 58
+    Text: b'\x04\xd2\x85\x00\x00\x01\x00\x01\x00\x00\x00\x00\x04demo\x07example\x00\x00\x01\x00\x01\x04demo\x07example\x00\x00\x01\x00\x01\x00\x00\x00<\x00\x04\xcb\x00q\x05'
+    Hex:  04 d2 85 00 00 01 00 01 00 00 00 00 04 64 65 6d 6f 07 65 78 61 6d 70 6c 65 00 00 01 00 01 04 64 65 6d 6f 07 65 78 61 6d 70 6c 65 00 00 01 00 01 00 00 00 3c 00 04 cb 00 71 05
+[0006] 2026-10-20T12:00:00.005000Z  IPv4/ICMP  56 bytes captured
+  192.0.2.10 -> 192.0.2.20
+  Payload: 14 bytes; showing 14
+    Text: b'CodeAlpha ping'
+    Hex:  43 6f 64 65 41 6c 70 68 61 20 70 69 6e 67
+[0007] 2026-10-20T12:00:00.006000Z  IPv4/ICMP  56 bytes captured
+  192.0.2.20 -> 192.0.2.10
+  Payload: 14 bytes; showing 14
+    Text: b'CodeAlpha ping'
+    Hex:  43 6f 64 65 41 6c 70 68 61 20 70 69 6e 67
+[0008] 2026-10-20T12:00:00.007000Z  IPv6/UDP  77 bytes captured
+  [2001:db8::10]:45001 -> [2001:db8::20]:9999
+  Payload: 15 bytes; showing 15
+    Text: b'IPv6 UDP sample'
+    Hex:  49 50 76 36 20 55 44 50 20 73 61 6d 70 6c 65
+[0009] 2026-10-20T12:00:00.008000Z  IPv6/ICMPv6  78 bytes captured
+  2001:db8::10 -> 2001:db8::20
+  Payload: 16 bytes; showing 16
+    Text: b'IPv6 echo sample'
+    Hex:  49 50 76 36 20 65 63 68 6f 20 73 61 6d 70 6c 65
+[0010] 2026-10-20T12:00:00.009000Z  OTHER  46 bytes captured
+  02:00:00:00:00:01 -> 02:00:00:00:00:02
+  Payload: 32 bytes; showing 32
+    Text: b'Unknown Ethernet protocol sample'
+    Hex:  55 6e 6b 6e 6f 77 6e 20 45 74 68 65 72 6e 65 74 20 70 72 6f 74 6f 63 6f 6c 20 73 61 6d 70 6c 65
+
+Summary
+  Packets: 10
+  Protocols: ARP=1, ICMP=2, ICMPv6=1, OTHER=1, TCP=2, UDP=3

@@ -1,0 +1,19 @@
+# Local Python environment and generated files
+.venv/
+__pycache__/
+*.py[cod]
+.coverage
+htmlcov/
+.pytest_cache/
+.ruff_cache/
+
+# Only the deliberately synthetic sample is submitted.
+*.pcap
+*.pcapng
+!examples/sample.pcap
+captures/
+
+# Editor and operating system files
+.DS_Store
+.idea/
+.vscode/
